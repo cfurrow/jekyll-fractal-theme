@@ -66,3 +66,26 @@ But we can't just use the first page we find as there could be duplicate folder 
 Therefore rather than using split pieces, we use the full path (a, then a/b then a/b/c) to find the index files.
 
 Each piece of the breadcrumb pieces needs a bigger slice to build a URL and then find the path. So we use `slice: 0, forloop.index` to get the URL for the first breadcrumb (slice 0 and 1), then the second (slice 0 and 2).
+
+
+## SCSS
+
+## SCSS structure
+
+- `_sass/fractal.scss` - This file is based on `minima.scss`
+- `_sass/fractal/` - Based on `_sass/minima/`
+- `_sass/custom.scss` - This file was created for some custom logic that makes sense for the Fractal theme.
+
+## Customize your site
+
+If you are using Fractal as your theme, you might want to override the defaults such as colors and fonts.
+
+Do that as follows, using custom values first and then import `fractal` which will use the variables set or the defaults it has.
+
+```scss
+---
+---
+$brand-color: #e22a92;
+@import "fractal";
+@import "custom";
+```
