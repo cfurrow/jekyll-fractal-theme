@@ -72,7 +72,7 @@ Each piece of the breadcrumb pieces needs a bigger slice to build a URL and then
 
 ## SCSS structure
 
-- `_sass/fractal.scss` - This file is based on `minima.scss`
+- `_sass/fractal.scss` - This file is based on [`minima.scss`](https://github.com/jekyll/minima/blob/v2.5.1/_sass/minima.scss) from `v2.5.1`.
 - `_sass/fractal/` - Based on `_sass/minima/`
 - `_sass/custom.scss` - This file was created for some custom logic that makes sense for the Fractal theme.
 
