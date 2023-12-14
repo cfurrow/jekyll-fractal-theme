@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   # Match GH Pages locked versions.
   spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
   spec.add_runtime_dependency "jekyll-optional-front-matter", "~> 0.3"
   spec.add_runtime_dependency "jekyll-titles-from-headings", "~> 0.5"
 
