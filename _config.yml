@@ -56,4 +56,4 @@ exclude:
 
 # This is only needed in the theme itself so that it builds with Jekyll 3 (see
 # head.html), but without actually using the Remote Theme plugin.
-remote_theme: ""
+remote_theme:
