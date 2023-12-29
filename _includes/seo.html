@@ -3,7 +3,7 @@
 {% endcomment %}
 
 {% assign author = site.author %}
-{% assign protocol = site.url | split: '/' | slice: 0  %}
+{% assign protocol = site.url | split: '/' | slice: 0 | join | split: ':' | slice: 0 | join  %}
 {% assign canonical_domain = site.url | split: '/' | slice: 2 | join %}
 
 {% if protocol == 'https' %}
