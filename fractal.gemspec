@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name = "fractal"
-  spec.version = "4.7.0"
-  spec.authors = ["MichaelCurrin"]
+  spec.version = "4.7.1"
+  spec.authors = ["MichaelCurrin", "cfurrow"]
   spec.email = [""]
 
   spec.summary = "A customized Jekyll theme to support sites about coding"
-  spec.homepage = "https://github.com/MichaelCurrin/fractal"
+  spec.homepage = "https://github.com/cfurrow/jekyll-fractal-theme"
   spec.license = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
