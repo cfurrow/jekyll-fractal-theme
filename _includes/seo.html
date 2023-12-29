@@ -6,8 +6,8 @@
      They are hardcoded here and kept out of a config, to retain the values when forked sites are created and the config is modified.
 {% endcomment %}
 
-{% assign author = "Michael Currin" %}
-{% assign canonical_domain = "https://michaelcurrin.github.io" %}
+{% assign author = site.author %}
+{% assign canonical_domain = "https://{{site.url}}" %}
 
 {%- if site.title %}
     <meta property="og:site_name" content="{{ site.title }}" />
