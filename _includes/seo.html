@@ -1,13 +1,29 @@
 {% comment %}
     Based on https://github.com/jekyll/jekyll-seo-tag/blob/master/lib/template.html
-
-     Please do NOT update the author and canonical variables.
-
-     They are hardcoded here and kept out of a config, to retain the values when forked sites are created and the config is modified.
 {% endcomment %}
 
 {% assign author = site.author %}
-{% assign canonical_domain = "https://{{site.url}}" %}
+{% assign protocol = site.url | split: '/' | slice: 0  %}
+{% assign canonical_domain = site.url | split: '/' | slice: 2 | join %}
+
+{% if protocol == 'https' %}
+  {% assign canonical_domain = 'https://' | append: canonical_domain %}
+{% else %}
+  {% assign canonical_domain = 'http://' | append: canonical_domain %}
+{% endif %}
+
+{% if site.title %}
+    <meta property="og:site_name" content="{{ site.title }}" />
+{% endif %}
+
+{% if page.title %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <meta property="og:title" content="{{ page.title }}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+{% endif %}
 
 {%- if site.title %}
     <meta property="og:site_name" content="{{ site.title }}" />
