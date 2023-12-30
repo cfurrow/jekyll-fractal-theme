@@ -46,6 +46,7 @@ LOGOS=(
   postgresql
   python
   react
+  rss
   rust
   ruby
   rubyonrails
