@@ -36,8 +36,8 @@ See on GitHub:
 - [cli.html][] - includes file with Liquid templating.
 - [cli-demo.md][] - this page, with frontmatter.
 
-[cli.html]: https://github.com/{{ site.github_username }}{{ site.baseurl }}/blob/master/_includes/cli.html
-[cli-demo.md]: https://github.com/{{ site.github_username }}{{ site.baseurl }}/blob/master/{{ page.path }}
+[cli.html]: https://github.com/{{ site.github.username }}/{{ site.github.repo }}/blob/{{ site.github.branch }}/_includes/cli.html
+[cli-demo.md]: https://github.com/{{ site.github.username }}/{{ site.github.repo }}/blob/{{ site.github.branch }}/{{ page.path }}
 
 **Code:**
 

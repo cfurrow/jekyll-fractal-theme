@@ -5,7 +5,13 @@ description: A Jekyll theme based on Minima, with support for coding icons and a
 
 author: Michael Currin
 email:
-github_username: MichaelCurrin
+github:
+  username: MichaelCurrin
+  repo: fractal
+  branch: main
+
+social_links:
+  - { platform: github, user_url: "https://github.com/cfurrow" }
 
 ### Build settings ###
 
