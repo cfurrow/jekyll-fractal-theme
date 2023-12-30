@@ -28,10 +28,11 @@ LOGOS=(
   githubactions # github-actions
   gnubash       # gnu-bash
   go
+  godotengine
   graphql
   html5
   hugo
-  java
+  java # removed per https://github.com/simple-icons/simple-icons/issues/7374
   javascript
   jekyll
   kubernetes
@@ -47,6 +48,7 @@ LOGOS=(
   react
   rust
   ruby
+  rubyonrails
   sqlite
   terraform
   typescript
@@ -70,6 +72,10 @@ echo '------'
 
 for LOGO in ${LOGOS[@]}; do
   echo "$LOGO"
+  if [[ ! -f "simple-icons/icons/$LOGO.svg" ]]; then
+    echo "  ERROR: $LOGO.svg does not exist in simple-icons repo"
+    continue
+  fi
   cp "simple-icons/icons/$LOGO.svg" _includes/logos
 
   sed -i '' \
