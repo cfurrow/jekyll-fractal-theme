@@ -9,3 +9,4 @@ _site/
 Gemfile.lock
 
 simple-icons/
+.DS_Store
