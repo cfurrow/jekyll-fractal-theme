@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "fractal"
-  spec.version = "4.7.6"
+  spec.version = "4.7.7"
   spec.authors = ["MichaelCurrin", "cfurrow"]
   spec.email = [""]
 
