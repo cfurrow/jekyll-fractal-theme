@@ -16,14 +16,14 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass)/|LICENSE|LICENSE-source|README.md)!i)
   end
 
-  spec.add_runtime_dependency "jekyll", ">= 3.9", "< 5.0"
+  spec.add_runtime_dependency "jekyll", ">= 4.3", "< 5.0"
 
   # Match GH Pages locked versions.
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.17"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
   spec.add_runtime_dependency "jekyll-optional-front-matter", "~> 0.3"
   spec.add_runtime_dependency "jekyll-titles-from-headings", "~> 0.5"
 
-  spec.add_development_dependency "bundler", ">= 1.15"
+  spec.add_development_dependency "bundler", ">= 2.4"
 end
